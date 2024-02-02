@@ -35,15 +35,15 @@
 };
 
 &caps_word {
-  continue-list = <UNDERSCORE MINUS>;
+ continue-list = <UNDERSCORE MINUS BSPC>;
 };
 
 / {
     behaviors {
         comma_colon: comma_colon {
             compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp COLON>;
+            #binding-cells = <2>;
+            bindings = <&mo>, <&kp COLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         dot_semi: dot_semi {
@@ -61,10 +61,10 @@
                 base_layer {
 label= "BASE"                              ;
  bindings = <
-                &kp Q           &kp W           &mt HYPER F     &kp P           &kp B           &kp J       &kp L              &mt HYPER U     &kp Y           &kp SQT
+                &kp Q           &kp W           &mt HYPER F     &kp P           &kp B           &kp J       &kp L              &kp U           &kp Y           &kp SQT
                 &mt LCTRL A     &mt LALT R      &mt LGUI S      &mt LSHFT T     &kp G           &kp M       &mt RSHFT N        &mt RGUI E      &mt RALT I      &mt RCTRL O
-    &mo BLE     &kp Z           &kp X           &mt MEH C       &kp D           &kp V           &kp K       &kp H              &mt MEH COMMA   &kp DOT         &kp MINUS    &trans
-                                                &lt NUM ESC     &lt NAV SPACE  &kp TAB         &kp RET     &lt SYM BSPC        &kp FSLH
+    &mo BLE     &kp Z           &kp X           &mt MEH C       &kp D           &kp V           &kp K       &kp H              &comma_colon    &lalt_gresc     &kp MINUS    &trans
+                                                &lt NUM ESC     &lt NAV SPACE   &kp TAB         &kp RET     &lt SYM BSPC       &kp FSLH
                         >;
                 };
 
@@ -73,9 +73,9 @@ label= "BASE"                              ;
                 num_layer {
 label= "NUM"                              ;
  bindings = <
-                &trans      &trans      &kp HYPER    &trans      &trans          &trans      &kp 7        &kp 8       &kp 9      &kp C_VOL_UP
-                &kp LCTRL   &kp LALT    &kp LGUI     &kp LSHFT   &trans          &trans      &kp 4        &kp 5       &kp 6      &kp C_VOL_DN
-    &trans      &trans      &trans      &kp MEH      &trans      &trans          &kp 0       &kp 1        &kp 2       &kp 3      &kp C_MUTE      &trans
+                &trans      &trans      &kp HYPER    &trans      &trans          &trans      &kp N7       &kp N8       &kp N9      &kp C_VOL_UP
+                &kp LCTRL   &kp LALT    &kp LGUI     &kp LSHFT   &trans          &trans      &kp N4       &kp N5       &kp N6      &kp C_VOL_DN
+    &trans      &trans      &trans      &kp MEH      &trans      &trans          &kp N0      &kp N1       &kp N2       &kp N3      &kp C_MUTE      &trans
                                         &trans       &kp SPACE   &kp TAB         &kp RET     &kp BSPC     &kp FSLH
                         >;
                 };
