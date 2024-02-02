@@ -19,7 +19,7 @@
 #define BASE 0
 #define NUM  1
 #define NAV  2
-#define SYM  3
+#define ADJ  3
 #define TVP1 4
 #define TVP2 5
 
@@ -69,7 +69,7 @@ label= "BASE"                              ;
                 &kp Q           &kp W           &kp F           &kp P           &kp B           &kp J       &kp L               &kp U           &kp Y           &kp SQT
                 &mt LCTRL A     &mt LALT R      &mt LGUI S      &mt LSHFT T     &kp G           &kp M       &mt RSHFT N         &mt RGUI E      &mt RALT I      &mt RCTRL O
     &trans      &kp Z           &kp X           &kp C           &kp D           &kp V           &kp K       &kp H               &kp COMMA       &kp DOT         &kp MINUS    &trans
-                                                &lt NUM ESC     &lt NAVI SPACE  &kp TAB         &kp RET     &lt SYM BSPC        &kp FSLH
+                                                &lt NUM ESC     &lt NAV SPACE  &kp TAB         &kp RET     &lt SYM BSPC        &kp FSLH
                         >;
                 };
 
