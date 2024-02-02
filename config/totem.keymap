@@ -23,6 +23,10 @@
 #define TVP1 4
 #define TVP2 5
 
+// HYPER AND MEH
+#define HYPER LG(LA(LS(LCTRL)))
+#define MEH LA(LS(LCTRL))
+
 &mt {
   quick-tap-ms = <100>;
   global-quick-tap;
@@ -81,9 +85,9 @@
                 base_layer {
 label= "BASE"                              ;
  bindings = <
-                &kp Q           &kp W           &kp F           &kp P           &kp B           &kp J       &kp L               &kp U           &kp Y           &kp SQT
-                &mt LCTRL A     &mt LALT R      &mt LGUI S      &mt LSHFT T     &kp G           &kp M       &mt RSHFT N         &mt RGUI E      &mt RALT I      &mt RCTRL O
-    &trans      &kp Z           &kp X           &kp C           &kp D           &kp V           &kp K       &kp H               &kp COMMA       &kp DOT         &kp MINUS    &trans
+                &kp Q           &kp W           &mt HYPER F     &kp P           &kp B           &kp J       &kp L              &mt HYPER U     &kp Y           &kp SQT
+                &mt LCTRL A     &mt LALT R      &mt LGUI S      &mt LSHFT T     &kp G           &kp M       &mt RSHFT N        &mt RGUI E      &mt RALT I      &mt RCTRL O
+    &trans      &kp Z           &kp X           &mt MEH C       &kp D           &kp V           &kp K       &kp H              &mt MEH COMMA   &kp DOT         &kp MINUS    &trans
                                                 &lt NUM ESC     &lt NAV SPACE  &kp TAB         &kp RET     &lt SYM BSPC        &kp FSLH
                         >;
                 };
