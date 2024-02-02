@@ -23,15 +23,6 @@
 #define TVP1 4
 #define TVP2 5
 
-ZMK_BEHAVIOR(mm_period_colon, mod_morph,
-    bindings = <&kp COMMA>, <&kp COLON>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
-ZMK_BEHAVIOR(mm_period_colon, mod_morph,
-    bindings = <&kp DOT>, <&kp SEMI>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
-
 &mt {
   quick-tap-ms = <100>;
   global-quick-tap;
