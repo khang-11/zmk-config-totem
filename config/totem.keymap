@@ -34,6 +34,10 @@
   tapping-term-ms = <170>;
 };
 
+&caps_word {
+  continue-list = <UNDERSCORE MINUS>;
+};
+
 / {
      combos {
             compatible = "zmk,combos";
@@ -76,10 +80,6 @@
             bindings = <&kp DOT>, <&kp SEMI>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-    };
-
-    &caps_word {
-        continue-list = <UNDERSCORE MINUS>;
     };
 
         keymap {
