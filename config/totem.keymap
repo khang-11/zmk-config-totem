@@ -34,6 +34,10 @@
   tapping-term-ms = <170>;
 };
 
+&lt {
+ quick-tap-ms = <100>;
+}
+
 &caps_word {
  continue-list = <UNDERSCORE MINUS BSPC>;
 };
