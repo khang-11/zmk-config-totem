@@ -87,7 +87,7 @@ label= "NUM"                              ;
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
                 nav_layer {
-label= "NAVI"                              ;
+label= "NAV"                              ;
  bindings = <
                 &trans      &trans      &kp HYPER   &trans      &trans          &kp CAPSLOCK    &kp LEFT_BRACE      &kp RIGHT_BRACE      &kp LEFT_PARENTHESIS      &kp RIGHT_PARENTHESIS
                 &kp LCTRL   &kp LALT    &kp LGUI    &kp LSHFT   &trans          &caps_word      &kp LEFT            &kp DOWN             &kp UP                    &kp RIGHT
@@ -98,7 +98,7 @@ label= "NAVI"                              ;
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-                sim_layer {
+                sym_layer {
 label= "SYM"                               ;
  bindings = <
                 &kp TILDE       &kp EXCLAMATION         &kp AT_SIGN     &kp HASH        &kp DOLLAR                    &trans                   &trans                   &kp HYPER                &trans                  &trans
@@ -109,7 +109,7 @@ label= "SYM"                               ;
                 };
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-                adjust_layer {
+                ble_layer {
 label= "BLE"                               ;
  bindings = <
                 &trans          &trans          &trans        &trans        &trans              &trans  &trans  &trans  &trans  &trans
