@@ -20,7 +20,8 @@
 #define NUM  1
 #define NAV  2
 #define SYM  3
-#define BLE  4
+#define FUN  4
+#define BLE  5
 
 // HYPER AND MEH
 #define HYPER LG(LA(LS(LCTRL)))
@@ -64,10 +65,10 @@
                 base_layer {
 label= "BASE"                              ;
  bindings = <
-                &kp Q           &kp W           &mt HYPER F     &kp P           &kp B           &kp J       &kp L              &kp U           &kp Y           &kp SQT
-                &mt LCTRL A     &mt LALT R      &mt LGUI S      &mt LSHFT T     &kp G           &kp M       &mt RSHFT N        &mt RGUI E      &mt RALT I      &mt RCTRL O
-    &mo BLE     &kp Z           &kp X           &mt MEH C       &kp D           &kp V           &kp K       &kp H              &comma_colon    &dot_semi       &kp MINUS    &trans
-                                                &lt NUM ESC     &lt NAV SPACE   &kp TAB         &kp RET     &lt SYM BSPC       &kp FSLH
+                &kp Q           &kp W           &mt HYPER F     &kp P           &kp B               &kp J       &kp L              &kp U           &kp Y           &kp SQT
+                &mt LCTRL A     &mt LALT R      &mt LGUI S      &mt LSHFT T     &kp G               &kp M       &mt RSHFT N        &mt RGUI E      &mt RALT I      &mt RCTRL O
+    &mo BLE     &kp Z           &kp X           &mt MEH C       &kp D           &kp V               &kp K       &kp H              &comma_colon    &dot_semi       &kp MINUS    &trans
+                                                &lt NUM ESC     &lt NAV SPACE   &lt FUN TAB         &kp RET     &lt SYM BSPC       &kp FSLH
                         >;
                 };
 
@@ -119,4 +120,16 @@ label= "BLE"                               ;
                 };
         };
 };
+// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+
+                fun_layer {
+label= "FUN"                              ;
+ bindings = <
+                &trans      &trans      &kp HYPER    &trans      &trans          &trans      &kp F7       &kp F8       &kp F9      &kp F10
+                &kp LCTRL   &kp LALT    &kp LGUI     &kp LSHFT   &trans          &trans      &kp F4       &kp F5       &kp F6      &kp F11
+    &trans      &trans      &trans      &kp MEH      &trans      &trans          &trans      &kp F1       &kp F2       &kp F3      &kp F12     &trans
+                                        &trans       &kp SPACE   &kp TAB         &kp RET     &kp BSPC     &kp FSLH
+                        >;
+                };
+
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
