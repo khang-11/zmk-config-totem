@@ -56,6 +56,15 @@
             bindings = <&kp DOT>, <&kp SEMI>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        lt_meh_dot_semi: lt_meh_dot_semi {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+
+            quick-tap-ms = <100>;
+            global-quick-tap;
+            flavor = "tap-preferred";
+            tapping-term-ms = <170>;
+        };
     };
 
         keymap {
@@ -65,9 +74,9 @@
                 base_layer {
 label= "BASE"                              ;
  bindings = <
-                &kp Q           &kp W           &mt HYPER F     &kp P           &kp B               &kp J       &kp L              &mt HYPER U            &kp Y           &kp SQT
-                &mt LCTRL A     &mt LALT R      &mt LGUI S      &mt LSHFT T     &kp G               &kp M       &mt RSHFT N        &mt RGUI E             &mt RALT I      &mt RCTRL O
-    &mo BLE     &kp Z           &kp X           &mt MEH C       &kp D           &kp V               &kp K       &kp H              &mt MEH comma_colon    &dot_semi       &kp MINUS    &trans
+                &kp Q           &kp W           &mt HYPER F     &kp P           &kp B               &kp J       &kp L              &mt HYPER U          &kp Y           &kp SQT
+                &mt LCTRL A     &mt LALT R      &mt LGUI S      &mt LSHFT T     &kp G               &kp M       &mt RSHFT N        &mt RGUI E           &mt RALT I      &mt RCTRL O
+    &mo BLE     &kp Z           &kp X           &mt MEH C       &kp D           &kp V               &kp K       &kp H              &lt_meh_dot_semi     &dot_semi       &kp MINUS    &trans
                                                 &lt NUM ESC     &lt NAV SPACE   &lt FUN TAB         &kp RET     &lt SYM BSPC       &kp FSLH
                         >;
                 };
