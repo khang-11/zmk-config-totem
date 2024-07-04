@@ -59,6 +59,7 @@
         lt_meh_dot_semi: lt_meh_dot_semi {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
+            bindings = <&mo>, <&dot_semi>;
 
             quick-tap-ms = <100>;
             global-quick-tap;
